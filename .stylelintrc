@@ -1,7 +1,7 @@
 {
   "ignoreFiles": [
     "./build/**/*.css",
-    "./src/styles/reset.css"
+    "./src/css/reset.css"
   ],
   "extends": "stylelint-config-standard"
 }
