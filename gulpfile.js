@@ -60,7 +60,6 @@ const outputOptions = {
 
 gulp.task("js", async () => {
   const bundle = await rollup.rollup(inputOptions);
-  const { code, map } = await bundle.generate(outputOptions);
   await bundle.write(outputOptions);
 });
 
