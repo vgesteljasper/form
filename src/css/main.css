@@ -119,11 +119,11 @@ body {
 }
 
 .icon_phone {
-  background-image: url(svg/phone.svg);
+  background-image: url(../svg/phone.svg);
 }
 
 .icon_mail {
-  background-image: url(svg/mail.svg);
+  background-image: url(../svg/mail.svg);
 }
 
 .form__input {
