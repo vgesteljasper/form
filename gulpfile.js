@@ -12,15 +12,15 @@ const uglify = require("rollup-plugin-uglify");
 const config = {
   html: {
     source: "./src/index.html",
-    dest: "./build"
+    dest: "./dist"
   },
   css: {
     source: "./src/css/main.css",
-    dest: "./build/css"
+    dest: "./dist/css"
   },
   js: {
     source: "./src/js/script.js",
-    dest: "./build/js/script.min.js",
+    dest: "./dist/js/script.min.js",
     exclude: "node_modules/**"
   }
 };

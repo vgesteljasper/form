@@ -6,13 +6,15 @@
   "author": "vgesteljasper <vgesteljasper@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run clean && gulp watch",
-    "build": "npm run clean && gulp",
-    "clean": "del ./build"
+    "dev": "npm run clean && npm run copy && gulp watch",
+    "build": "npm run clean && npm run copy && gulp",
+    "copy": "copyfiles -u 1 ./src/svg/*.* ./dist",
+    "clean": "del ./dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
+    "copyfiles": "^1.2.0",
     "del-cli": "^1.1.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.0",
