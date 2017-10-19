@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form</title>
+    <meta name="author" value="Van Gestel Jasper <vgesteljasper@gmail.com>">
+    <link type="text/css" rel="stylesheet" href="/css/main.min.css">
+  </head>
+  <body>
+
+    <header>
+      <h1 class="hidden">form page</h1>
+    </header>
+
+    <section class="section contact">
+      <!-- h2 because contact section won't be the main title of the page
+        if implemented into website -->
+      <h2 class="contact__title">Contact</h2>
+
+      <div class="contact__info">
+        <div class="flex-column">
+          <div class="contact__info__centered">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <a class="contact__link" href="https://maps.google.com/" target="_blank">zie Google maps &#x2192;</a>
+          </div>
+        </div>
+        <div class="flex-column">
+          <a class="contact__link" href="tel:+3292418659"><span class="icon icon_phone"></span>+32 9 241 86 59</a>
+          <a class="contact__link" href="mailto:info@esign.eu"><span class="icon icon_mail"></span>info@esign.eu</a>
+        </div>
+      </div>
+
+      <form class="form contact__form" method="POST" action="/form-submit.php" novalidate>
+        <div class="flex-row">
+          <div class="flex-column form__column">
+            <label class="form__item">
+              <span class="form__error"></span>
+              <span class="form__label">Name<sup>*</sup></span>
+              <input class="form__input form__input_name" name="form__input_name" type="text" data-type="text" required>
+            </label>
+            <label class="form__item">
+              <span class="form__error"></span>
+              <span class="form__label">Email<sup>*</sup></span>
+              <input class="form__input form__input_name" name="form__input_email" type="email" data-type="email" required>
+            </label>
+          </div>
+          <div class="flex-column form__column">
+            <label class="form__item">
+              <span class="form__error"></span>
+              <span class="form__label">Company</span>
+              <input class="form__input form__input_company" name="form__input_company" type="text" data-type="text">
+            </label>
+            <label class="form__item">
+              <span class="form__error"></span>
+              <span class="form__label">Phone<sup>*</sup></span>
+              <input class="form__input form__input_phone" name="form__input_phone" type="tel" data-type="phone" required>
+            </label>
+          </div>
+        </div>
+        <label class="form__item form__item_message">
+          <span class="form__label hidden">How can we help?</span>
+          <textarea class="form__input form__input_message" name="form__input_message" rows="10" placeholder="How can we help?"></textarea>
+        </label>
+        <span class="form__required-text">Fields marked with <sup>*</sup> are required.</span>
+        <input class="form__input form__input_submit" name="form__input_submit" type="submit" value="Verzend">
+      </form>
+
+    </section>
+
+    <script src="/js/script.min.js" type="application/javascript" defer></script>
+  </body>
+</html>
